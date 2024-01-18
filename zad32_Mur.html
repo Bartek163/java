@@ -1,0 +1,30 @@
+<html>
+<head>
+   <script type="text/javascript">
+      function owoc(rodzaj,miejsce,dojrzewanie)
+      {
+      this.rodzaj=rodzaj;
+      this.miejsce=miejsce;
+      this.dojrzewanie=dojrzewanie;
+      }
+
+      owoc.prototype.wypisz = function () 
+      {
+      alert(this.rodzaj + ' ' + this.miejsce+ ' ' + this.dojrzewanie);
+      };
+
+      var owoc1 = new owoc("jablko", "sad", "2 lata"); 
+      var owoc2 = new owoc('malina', 'krzew', '1 rok');
+      owoc1.wypisz(); 
+      owoc2.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+  
+      document.write("owoc pierwszy"+" &nbsp;rodzaj: "+owoc1.rodzaj+" &nbsp;miejsce: "+owoc1.miejsce+" &nbsp;Dojrzewanie: "+owoc1.dojrzewanie+"<br>");
+      document.write("owoc drugi"+" &nbsp;rodzaj: "+owoc2.rodzaj+" &nbsp;miejsce: "+owoc2.miejsce+" &nbsp;dojrzewanie: "+owoc2.dojrzewanie);
+   </script>
+</head>
+<body>
+   <br>
+   programowanie obiektowe
+</body>
+</html>
